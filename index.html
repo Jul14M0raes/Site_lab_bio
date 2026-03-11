@@ -1,227 +1,276 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <nav class="navbar-container">
+    <meta charset="UTF-8" />
+    <title>Página inicial | Biogeoquímica UNIR</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar-container">
       <div class="navbar-content">
         <div class="logo">
-          <img src="assets/logo_lab_curto.png" alt="Logo Biogeoquímica UNIR" />
+          <img
+            src="assets/logos/logo_lab_curto.png"
+            alt="Laboratório de Biogeoquímica"
+          />
         </div>
-        <ul class="nav-links">
-          <li><a href="#">Galeria</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Extensão</a></li>
-          <li><a href="#">Laboratório</a></li>
-        </ul>
 
-        <div class="nav-button">
-          <a href="#" class="btn-contact">Contato</a>
-        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="extensao.html">Extensão</a></li>
+            <li><a href="laboratorio.html">Laboratório</a></li>
+          </ul>
+        </nav>
+
+        <a href="contato.html" class="btn-contact">Contato</a>
       </div>
-    </nav>
-  </head>
-  <body>
-    <section class="hero">
-      <div class="hero-container">
-        <div class="hero-carousel">
-          <div
-            class="slide"
-            style="background-image: url(&quot;assets/foto_1.png&quot;)"
-          ></div>
-          <div
-            class="slide"
-            style="background-image: url(&quot;assets/foto_2.png&quot;)"
-          ></div>
-          <div
-            class="slide"
-            style="background-image: url(&quot;assets/foto_3.png&quot;)"
-          ></div>
-          <div
-            class="slide"
-            style="background-image: url(&quot;assets/foto_4.png&quot;)"
-          ></div>
-        </div>
+    </header>
 
-        <div class="hero-overlay">
-          <div class="hero-content">
-            <h1>
-              Laboratório de <br />
-              <span>BioGeoQuímica</span>
-            </h1>
-            <p>Wolfgang C. Pfeiffer</p>
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero-wrapper">
+        <div class="hero-container">
+          <div class="hero">
+            <img src="assets/imagens/foto_1.png" alt="Equipe do laboratório" />
+
+            <div class="hero-text">
+              <h1>Laboratório de BioGeoQuímica</h1>
+              <p>Wolfgang C. Pfeiffer</p>
+            </div>
           </div>
         </div>
-      </div>
-
+      </section>
       <div class="yellow-bar"></div>
-    </section>
 
-    <section class="objetivos">
-      <div class="container">
-        <h2 class="atuacao-title">OBJETIVOS</h2>
+      <!-- ================= OBJETIVOS ================= -->
+      <section class="objetivos">
+        <div class="container">
+          <h2 class="section-title blue">OBJETIVOS</h2>
 
-        <div class="objetivos-grid">
-          <div class="objetivo-card">
-            <img src="assets/icon-geoquimico.png" alt="Objetivo Geoquímico" />
-            <div class="card-content">
-              <h3>Geoquímico</h3>
-              <p>
-                Determinar a abundância de elementos naturais no tempo e no
-                espaço por meio de técnicas analíticas, contribuindo para a
-                compreensão da origem, idade e estrutura dos ecossistemas.
-              </p>
+          <div class="objetivos-grid">
+            <div class="objetivo-item">
+              <div class="objetivo-icon">
+                <img src="assets/icones/icon-geoquimico.png" alt="Geoquímico" />
+              </div>
+              <div class="objetivo-card">
+                <h3>Geoquímico</h3>
+                <p>
+                  Determinar a abundância de elementos naturais no tempo e no
+                  espaço por meio de técnicas analíticas, contribuindo para a
+                  compreensão da origem, idade e estrutura dos ecossistemas.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="objetivo-card">
-            <img
-              src="assets/icon-socioambiental.png"
-              alt="Objetivo Socioambiental"
-            />
-            <div class="card-content">
-              <h3>Socioambiental</h3>
-              <p>
-                Fornecer subsídios aos diversos campos da saúde e proteção
-                humana. Buscar conhecimento para um meio ambiente limpo e
-                saudável.
-              </p>
+            <div class="objetivo-item">
+              <div class="objetivo-icon">
+                <img
+                  src="assets/icones/icon-socioambiental.png"
+                  alt="Socioambiental"
+                />
+              </div>
+              <div class="objetivo-card">
+                <h3>Socioambiental</h3>
+                <p>
+                  Fornecer subsídios aos diversos campos da saúde e proteção
+                  humana. Buscar conhecimento para um meio ambiente limpo e
+                  saudável.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="objetivo-card">
-            <img src="assets/icon-biologica.png" alt="Objetivo Biologico" />
-            <div class="card-content">
-              <h3>Biológico/Segurança</h3>
-              <p>
-                Entender os processos biológicos suas interações com os diversos
-                elementos químicos, para que assim, se tenha conhecimento das
-                diversos redes de conexão.
-              </p>
+            <div class="objetivo-item">
+              <div class="objetivo-icon">
+                <img src="assets/icones/icon-biologica.png" alt="Biológico" />
+              </div>
+              <div class="objetivo-card">
+                <h3>Biológico / Segurança</h3>
+                <p>
+                  Entender os processos biológicos e suas interações com os
+                  diversos elementos químicos, ampliando o conhecimento das
+                  redes ecológicas.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="objetivo-card">
-            <img
-              src="assets/icon-cientifico.png"
-              alt="Objetivo tecnico-cientifico"
-            />
-            <div class="card-content">
-              <h3>Técnico/Científico</h3>
-              <p>
-                Inovação em processos e produtos por meio do desenvolvimento ou
-                da implementação de novas tecnologias, a fim de otimizar o
-                desempenho e os resultados.
-              </p>
+            <div class="objetivo-item">
+              <div class="objetivo-icon">
+                <img
+                  src="assets/icones/icon-cientifico.png"
+                  alt="Técnico Científico"
+                />
+              </div>
+              <div class="objetivo-card">
+                <h3>Técnico / Científico</h3>
+                <p>
+                  Inovação em processos e produtos por meio do desenvolvimento e
+                  implementação de novas tecnologias, otimizando desempenho e
+                  resultados.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div class="blue-bar"></div>
+      </section>
+      <!-- ================= ATUAÇÃO ================= -->
+      <section class="atuacao">
+        <div class="container">
+          <h2 class="section-title">ATUAÇÃO</h2>
 
-    <section class="atuacao">
-      <div class="container-atuacao">
-        <h2 class="atuacao-title">ATUAÇÃO</h2>
-
-        <div class="atuacao-grid">
-          <article class="atuacao-card">
-            <div class="atuacao-icon">
-              <img src="assets/icon-projeto.png" alt="Ícone de Projetos" />
-            </div>
-            <div class="atuacao-content">
+          <div class="atuacao-grid">
+            <!-- Projetos -->
+            <a href="projetos.html" class="atuacao-card">
+              <div class="icon-circle">📂</div>
               <h3>Projetos</h3>
-              <p>Exploração de iniciativas e soluções desenvolvidas.</p>
-            </div>
-            <a href="#" class="atuacao-btn">Ver projetos</a>
-          </article>
+              <p>
+                Conheça os projetos de pesquisa desenvolvidos pelo laboratório
+                nas áreas de saúde ambiental e biogeoquímica amazônica.
+              </p>
+              <span class="card-link">Explorar →</span>
+            </a>
 
-          <article class="atuacao-card">
-            <div class="atuacao-icon">
-              <img src="assets/icon-eventos.png" alt="Ícone de Eventos" />
-            </div>
-            <div class="atuacao-content">
-              <h3>Eventos</h3>
-              <p>Participações em congressos, palestras e workshops.</p>
-            </div>
-            <a href="#" class="atuacao-btn">Ver eventos</a>
-          </article>
+            <!-- Produções Acadêmicas -->
+            <a href="producoes.html" class="atuacao-card">
+              <div class="icon-circle">🎓</div>
+              <h3>Produções Acadêmicas</h3>
+              <p>
+                Trabalhos de conclusão, dissertações, teses e orientações
+                desenvolvidas junto ao laboratório.
+              </p>
+              <span class="card-link">Explorar →</span>
+            </a>
 
-          <article class="atuacao-card">
-            <div class="atuacao-icon">
-              <img
-                src="assets/icon-publicacao.png"
-                alt="Ícone de Publicações"
-              />
-            </div>
-            <div class="atuacao-content">
+            <!-- Publicações -->
+            <a href="publicacoes.html" class="atuacao-card">
+              <div class="icon-circle">📚</div>
               <h3>Publicações</h3>
-              <p>Artigos, livros e materiais educativos publicados.</p>
-            </div>
-            <a href="#" class="atuacao-btn">Ver publicações</a>
-          </article>
+              <p>
+                Artigos científicos publicados em periódicos nacionais e
+                internacionais.
+              </p>
+              <span class="card-link">Explorar →</span>
+            </a>
 
-          <article class="atuacao-card">
-            <div class="atuacao-icon">
+            <!-- Eventos -->
+            <a href="eventos.html" class="atuacao-card">
+              <div class="icon-circle">📅</div>
+              <h3>Eventos</h3>
+              <p>
+                Participação e organização de congressos, seminários e ações de
+                extensão.
+              </p>
+              <span class="card-link">Explorar →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= COORDENAÇÃO ================= -->
+      <section class="highlight-section">
+        <div class="container coordenacao-container">
+          <h2 class="section-title white">Coordenação</h2>
+
+          <div class="coordenacao-grid">
+            <!-- Coordenador -->
+            <div class="coordenador-card">
               <img
-                src="assets/icon-producao-academica.png"
-                alt="Ícone de Produção Acadêmica"
+                src="assets/imagens/perfil_ronaldo.png"
+                alt="Ronaldo de Almeida"
               />
+
+              <div class="coordenador-info">
+                <h3>Ronaldo de Almeida</h3>
+                <span class="funcao">Coordenador</span>
+
+                <div class="contatos">
+                  <p>
+                    <strong>Lattes:</strong>
+                    <a href="#" target="_blank">Currículo Lattes</a>
+                  </p>
+                  <p><strong>Telefone:</strong> (69) 99999-9999</p>
+                  <p><strong>Email:</strong> ronaldo@unir.br</p>
+                </div>
+              </div>
             </div>
-            <div class="atuacao-content">
-              <h3>Produção Acadêmica</h3>
-              <p>Pesquisas, teses e contribuições científicas.</p>
+
+            <!-- Vice Coordenador -->
+            <div class="coordenador-card">
+              <img
+                src="assets/imagens/perfil_wanderley.png"
+                alt="Warderley Rodrigues Bastos"
+              />
+
+              <div class="coordenador-info">
+                <h3>Warderley Rodrigues Bastos</h3>
+                <span class="funcao">Vice-Coordenador</span>
+
+                <div class="contatos">
+                  <p>
+                    <strong>Lattes:</strong>
+                    <a href="#" target="_blank">Currículo Lattes</a>
+                  </p>
+                  <p><strong>Telefone:</strong> (69) 98888-8888</p>
+                  <p><strong>Email:</strong> warderley@unir.br</p>
+                </div>
+              </div>
             </div>
-            <a href="#" class="atuacao-btn">Ver produções</a>
-          </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="linha-azul"></div>
+    <!-- ================= Rodapé ================= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Coluna 1 -->
+        <div class="footer-col footer-left">
+          <img
+            src="assets/logos/logo_unir.png"
+            alt="Logo UNIR"
+            class="footer-logo-unir"
+          />
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 2 -->
+        <div class="footer-col footer-center">
+          <img
+            src="assets/logos/logo_lab_curto.png"
+            alt="Logo Laboratório"
+            class="footer-logo-lab"
+          />
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="footer-col footer-right">
+          <div class="address-bar"></div>
+          <p>
+            Rodovia BR-364 km 9,5 sentido Acre. Bloco 1Q, Campus José Ribeiro
+            Filho.<br />
+            Porto Velho - Rondônia. CEP: 76800-500
+          </p>
         </div>
       </div>
-    </section>
+
+      <div class="footer-bottom">
+        <p>Copyrights © BioGeoQuímica Ambiental</p>
+        <p>Fevereiro - 2026</p>
+      </div>
+    </footer>
   </body>
-  <div class="blue-bar"></div>
-
-  <footer class="footer-atuacao">
-    <div class="container-footer">
-      <div class="footer-column brand-social">
-        <img
-          src="assets/logo_unir.png"
-          alt="Logo UNIR"
-          class="footer-logo-unir"
-        />
-        <div class="social-links">
-          <a href="#" class="social-icon whatsapp"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
-          <a href="#" class="social-icon instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" class="social-icon facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="#" class="social-icon youtube"
-            ><i class="fab fa-youtube"></i
-          ></a>
-        </div>
-      </div>
-
-      <div class="footer-column lab-central">
-        <img
-          src="assets/logo_lab_curto.png"
-          alt="Laboratório Biogeoquímica Ambiental"
-          class="footer-logo-lab"
-        />
-      </div>
-
-      <div class="footer-column address-info">
-        <p>Rodovia BR-364 km 9,5 sentido Acre.</p>
-        <p>Bloco 1Q, Campus José Ribeiro Filho.</p>
-        <p>Porto Velho - Rondônia. CEP: 76800-500</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>Copyrights &copy; BioGeoQuímica Ambiental</p>
-      <p>Fevereiro - 2026</p>
-    </div>
-  </footer>
 </html>
