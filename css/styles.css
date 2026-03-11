@@ -1,0 +1,503 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIÁVEIS ================= */
+:root {
+  --azul: #0d1e8a;
+  --azul-escuro: #09145c;
+  --amarelo: #fefc03;
+  --cinza-bg: #ededed;
+  --cinza-card: #e5e5e5;
+  --branco: #ffffff;
+}
+
+/* ================= BASE ================= */
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--cinza-bg);
+  padding-top: 100px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ================= TIPOGRAFIA ================= */
+.section-title {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--azul);
+  margin-bottom: 50px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--branco);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 65px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--azul);
+}
+
+.nav-links a.active {
+  border-bottom: 3px solid var(--azul);
+}
+
+.btn-contact {
+  background: var(--azul);
+  color: var(--branco);
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ================= HERO MOLDURA ================= */
+.hero-wrapper {
+  background: var(--azul);
+  padding: 50px 0;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.hero {
+  position: relative;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--branco);
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.yellow-bar {
+  height: 10px;
+  background: var(--amarelo);
+}
+
+/* ================= OBJETIVOS ================= */
+
+.objetivos {
+  padding: 80px 20px;
+  background: #f4f4f4;
+}
+
+.objetivos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* Estrutura do item */
+.objetivo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ícone grande acima */
+.objetivo-icon {
+  margin-bottom: 20px;
+}
+
+.objetivo-icon img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.objetivo-item:hover .objetivo-icon img {
+  transform: scale(1.1);
+}
+
+/* Card azul */
+.objetivo-card {
+  background: #0b1a8a; /* azul forte da identidade */
+  color: #fff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.objetivo-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.objetivo-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Hover elegante */
+.objetivo-item:hover .objetivo-card {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+/* ================= ATUAÇÃO ================= */
+.atuacao {
+  padding: 100px 0;
+  background: var(--azul-escuro);
+  text-align: center;
+}
+
+.atuacao-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.atuacao h2 {
+  color: var(--branco);
+}
+.atuacao-card {
+  background: var(--branco);
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e6e6e6;
+  transition:
+    border 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.atuacao-card:hover {
+  border-color: var(--azul);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 25px auto;
+  border-radius: 50%;
+  background: var(--azul);
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.atuacao-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--azul);
+}
+
+.atuacao-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--azul);
+}
+
+/* ================= COORDENAÇÃO ================= */
+.highlight-section {
+  background: var(--cinza-bg);
+  padding: 100px 0;
+  color: var(--branco);
+  text-align: center;
+}
+
+.section-title.white {
+  color: var(--azul-escuro);
+}
+
+.coordenacao-grid {
+  max-width: 1000px;
+  margin: 60px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.coordenador-card {
+  background: #10206b;
+  border-radius: 8px;
+  padding: 35px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+}
+
+.coordenador-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 3px solid var(--amarelo);
+}
+
+.coordenador-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.funcao {
+  display: inline-block;
+  background: var(--amarelo);
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contatos p {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.contatos a {
+  color: var(--amarelo);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.linha-azul {
+  height: 30px;
+  background: var(--azul-escuro);
+}
+/* ================= FOOTER ================= */
+.footer {
+  background: var(--branco);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-top img {
+  height: 60px;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 1100px) {
+  .objetivos-grid,
+  .atuacao-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .coordenacao-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .objetivos-grid,
+  .atuacao-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coordenador-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #f2f2f2;
+  padding: 60px 20px 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Colunas */
+.footer-col {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Logos */
+.footer-logo-unir {
+  max-width: 200px;
+  margin-bottom: 25px;
+}
+
+.footer-logo-lab {
+  max-width: 260px;
+  display: block;
+  margin: auto;
+}
+
+/* Redes sociais */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #0b3c78;
+  transition: 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a:hover {
+  background: #0b3c78;
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+/* Endereço */
+.footer-right {
+  position: relative;
+  padding-left: 20px;
+}
+
+.address-bar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: #0f6b3e;
+  border-radius: 3px;
+}
+
+.footer-right p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  text-align: right;
+}
+
+/* Parte inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+  color: #222;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right p {
+    text-align: center;
+  }
+
+  .address-bar {
+    display: none;
+  }
+}
